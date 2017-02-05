@@ -19,3 +19,102 @@
     font-weight: bold;
     color: #000000;
 }
+ 
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-navigation {
+    width: 960px;
+}
+
+.basket-conteiner {
+    width: 200px;
+}
+
+.items-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.we-are {
+    width: 750px;
+    margin-right: auto;
+}
+
+.logo {
+    width: 400px;
+    margin-left: auto;
+}
+
+.accuracy {
+    float: left;
+    width: 100px;
+}
+
+.examples-logo {
+    display: flex;
+    flex-basis: 1160px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social {
+    display:flex;
+    flex-basis: 960px; 
+    flex-wrap: wrap;
+}
+
+.footer-btn {
+    width: 260px;
+    justify-content: space-between;
+}
+
+.footer-offer {
+    width: 560;
+    margin-left: 130px;
+    flex-wrap: wrap;
+    align-content: center; 
+}
+
+.shop {
+    width: 1160px;
+    height: 55px;
+    text-align: center;
+    margin-top: 86px;
+    margin-bottom: 78px;
+}
+
+.flex-shop {
+    display: flex;
+    flex-basis: 1160px;
+}
+
+.sidebar {
+    display: flex;
+    flex-basis: 260px;
+    padding-right: 140px;
+}
+
+.items {
+    display:flex;
+    flex-basis: 760px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}

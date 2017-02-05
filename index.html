@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet"> 
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container main-header-flex">
         <nav class="main-navigation">
           <ul>
             <li>
               <a>
-                <img src="#" width="111" height="24" alt="Nerd's">     
+              <img src="#" width="111" height="24" alt="Nerd's">     
               </a>
             </li>
             <li>
@@ -43,7 +44,7 @@
         <p class="slide-title">Долго, дорого, скрупулезно.</p> 
         <p class="slide-text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>  
         <a href="#">
-          <img src="#" width="240" height="50" alt="узнать больше">
+        <img src="#" width="240" height="50" alt="узнать больше">
         </a>  
 
       </div> 
@@ -51,7 +52,7 @@
         <p class="slide-title">Любим математику как никто другой</p> 
         <p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>  
         <a href="#">
-          <img src="#" width="240" height="50" alt="узнать больше">
+        <img src="#" width="240" height="50" alt="узнать больше">
         </a>  
       </div>
       <div class="third-slide">
@@ -59,43 +60,43 @@
         Только ночь, только хардкор</p> 
         <p class="slide-text">Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается.</p>  
         <a href="#">
-          <img src="#" width="240" height="50" alt="узнать больше">
+        <img src="#" width="240" height="50" alt="узнать больше">
         </a>  
       </div>    
     </section> 
     
-    <section class="items">
+    <section class="items items-flex">
       <div class="web">
         <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
         <h2 class="items">Веб-сайты</h2>
-          <p>Мир никогда не будет прежним после того, как увидит наш сайт!</p>
+        <p>Мир никогда не будет прежним после того, как увидит наш сайт!</p>
         <a href="#">Заказать</a> 
       </div>    
       <div class="app">
         <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
         <h2 class="items">Приложения</h2>
-          <p>Покорите Топ-10 приложений вAppStore и Google Play!</p>
+        <p>Покорите Топ-10 приложений вAppStore и Google Play!</p>
         <a href="#">Заказать</a> 
       </div>
       <div class="presentations">
         <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
         <h2 class="items">Презентации</h2>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
         <a href="#">Заказать</a> 
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us about-us-flex">
       <div class="we-are">
-        <p class="we-are"><b>Мы - маленькая, но гордая 
-            дизайн-студия из Краснодара. </b></p> 
+        <p class="we-are-text"><b>Мы - маленькая, но гордая 
+           дизайн-студия из Краснодара. </b></p> 
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
         превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h2>Выполняем заказы на разработку:</h2>
         <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для iOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div> 
 
@@ -114,9 +115,17 @@
           <p class="percents">50%</p> 
           <p>Минимальная предоплата</p>   
         </div>
-      </div>      
+      </div>    
     </section>
+       
+      <div class="examples-logo">
+        <a href="#"> <img src="img/logo-1.png" width="199" height="68" alt="html"></a>
+        <a href="#"> <img src="img/logo-2.png" width="209" height="87" alt="borodinsky"></a>
+        <a href="#"> <img src="img/logo-3.png" width="185" height="52" alt="pink"></a>
+        <a href="#"> <img src="img/logo-4.png" width="173" height="84" alt="mishka"></a>
+      </div>  
     </main>
+    
     <div class="map">
       <img src="#" width="1440" height="416" alt="карта">    
       <div class="adress">
@@ -125,20 +134,22 @@
         ул Б. Конюшенная, 9/18</p>
         <p>
         тел. +7(812)275-75-75
-        </p>
-        <a href="#">Заказать</a>       
+        </p>     
       </div>
     </div>
+    
     <footer class="main-footer">
       <div class="container">
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-offer">
-          <h2>Давайте дружить, это выгодно!</h2>
+         <div class="footer-btn">
+          <a class="social-btn" href="#">вк</a>
+          <a class="social-btn" href="#">фб</a>
+          <a class="social-btn" href="#">им</a>
+         </div>
+         <div class="footer-offer">
+          <h2 class="friends">Давайте дружить, это выгодно!</h2>
           <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+         </div>
         </section>
       </div>
     </footer>

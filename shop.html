@@ -3,16 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/style.css" rel="stylesheet"> 
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container main-header-flex">
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">
-                <img src="#" width="111" height="24" alt="Nerd's">     
-              </a>
+              <a>
+              <img src="#" width="111" height="24" alt="Nerd's">   </a>
             </li>
             <li>
               <a href="#">Студия</a>
@@ -31,7 +31,7 @@
             </li>
           </ul>
         </nav>
-        <div class="basket">
+        <div class="basket-container">
           <a class="basket" href="#">Корзина</a>
         </div>
       </div>
@@ -41,11 +41,10 @@
       <div class="shop">
         <h1>Магазин готовых шаблонов</h1>      
       </div>
-      <section class="sidebar">
-        <div class="price-range">   
-кастомный элемент
-        </div>
+      <div class="flex-shop">
+      <section class="sidebar">   
         <div class="form">
+         range
           <form action="#" method="get">
             <div> Сетка:</div>
             <label> <input type="radio" name="grid" value="adaptive" checked>Адаптивная</label>
@@ -85,69 +84,77 @@
           <a href="#">
             <img src="img/img-sedona.jpg" width="360" height="616" alt="Sedona">     
           </a> 
+<!--
           <div class="hover">
             <b>Sedona</b>
             <p>Информационный сайт
             для туристов</p> 
             <a href="#">9 900 руб.</a>  
           </div>   
-        </div> 
-        <div class="items">
+-->
+        
           <a href="#">
             <img src="img/img-pink.jpg" width="360" height="616" alt="Pink">     
           </a>
+<!--
           <div class="hover">
             <b>Pink app</b>
             <p>Продуктовый лендинг
             приложения для iOS и Android</p> 
             <a href="#">9 900 руб.</a>  
           </div>       
-        </div>  
-        <div class="items">
+-->
+       
           <a href="#">
             <img src="img/img-barbershop.jpg" width="360" height="616" alt="Barbershop">     
           </a>    
+<!--
           <div class="hover">
             <b>Barbershop</b>
             <p>Сайт салона красоты.
             Для мужчин, да.</p> 
             <a href="#">9 900 руб.</a>  
           </div>   
-        </div> 
-        <div class="items">
+-->
+       
           <a href="#">
             <img src="img/img-mishka.jpg" width="360" height="616" alt="Mishka">     
           </a>   
+<!--
           <div class="hover">
             <b>Mishka</b>
             <p>Интернет магазин
             вязаных игрушек</p> 
             <a href="#">9 900 руб.</a>  
           </div>    
-        </div>  
-        <div class="items">
+-->
+        
           <a href="#">
             <img src="img/img-aplus.jpg" width="360" height="616" alt="Aplus">     
           </a>
+<!--
           <div class="hover">
             <b>Aplus</b>
             <p>Лендинг курсов повышения
             квалификации</p> 
             <a href="#">9 900 руб.</a>  
           </div>       
-        </div>  
-        <div class="items">
+-->
+        
           <a href="#">
             <img src="img/img-kvast.jpg" width="360" height="616" alt="Kvast">     
           </a>    
+<!--
           <div class="hover">
             <b>Кваст</b>
             <p>Промо-сайт производителя
             крафтового кваса.</p> 
             <a href="#">9 900 руб.</a>  
           </div>   
+-->
         </div>  
       </section>
+      </div>
  
       <ul class="switch-pages">
         <li>
@@ -164,16 +171,31 @@
         </li>
       </ul> 
     </main>
+    
+    <div class="map">
+      <img src="#" width="1440" height="416" alt="карта">    
+      <div class="adress">
+        <b>nerd's design studio</b>
+        <p>191186, Санкт-Петербург
+        ул Б. Конюшенная, 9/18</p>
+        <p>
+        тел. +7(812)275-75-75
+        </p>     
+      </div>
+    </div>
+    
     <footer class="main-footer">
       <div class="container">
         <section class="footer-social">
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-offer">
-          <p class="profitably">Давайте дружить, это выгодно!</p>
+         <div class="footer-btn">
+          <a class="social-btn" href="#">вк</a>
+          <a class="social-btn" href="#">фб</a>
+          <a class="social-btn" href="#">им</a>
+         </div>
+         <div class="footer-offer">
+          <h2 class="friends">Давайте дружить, это выгодно!</h2>
           <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+         </div>
         </section>
       </div>
     </footer>
