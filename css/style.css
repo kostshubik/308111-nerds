@@ -1,18 +1,19 @@
-.body {
+body {
     font-family: Roboto;
     font-size: 16px;
     line-height: 24px;
     font-weight: normal;
     color: #283136;
 }
-.h1 {
+h1 {
     font-family: Roboto medium;
     font-size: 55px;
     line-height: 55px;
     font-weight: normal;
     color: #000000;
+    text-align: center;
 }
-.h2 {
+h2 {
     font-family: Roboto;
     font-size: 24px;
     line-height: 30px;
@@ -26,11 +27,16 @@
   padding: 0 20px;
 }
 
+
 .main-header-flex {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
+.shop {
+    margin-bottom: 106px;
+}
 .main-navigation {
     width: 960px;
 }
@@ -115,6 +121,11 @@
     flex-basis: 760px;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    
+}
+
+
+div {
+    outline-color:fuchsia;
+    outline-width: medium;
+    outline-style: dotted;
 }
