@@ -47,7 +47,36 @@ h2 {
 
 .items-flex {
     display: flex;
-    justify-content: space-between;
+    flex-basis: 1100px;
+}
+
+/*
+.web {
+    width: 33%;
+}
+
+.app {
+    width: 33%;
+}
+
+.presentations {
+    width: 33%;
+}
+*/
+
+.web {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.app {
+    width: 300px;
+    margin-right: 100px;
+}
+
+.presentations {
+    width: 300px;
+    margin-right: 60px;
 }
 
 .about-us-flex {
