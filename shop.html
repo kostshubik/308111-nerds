@@ -6,34 +6,21 @@
     <link href="css/style.css" rel="stylesheet"> 
   </head>
   <body>
-    <header class="main-header">
-      <div class="container main-header-flex">
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a>
-              <img src="img/nerds-logo.png" width="160" height="65" alt="Nerd's">   </a>
-            </li>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
+    <header>
+      <div class="container clearfix">
+        <div class="navigation">
+         <div class="header-logo">
+             <a class="header-logo">
+             <img src="img/nerds-logo.png" width="160" height="65" alt="Nerd's"> </a>
+         </div>
+          <ul class="main-navigation">
+            <li><a class="active" href="index.html">Студия</a></li>
+            <li><a href="#references">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </ul>
-        </nav>
-        <div class="basket-container">
-          <a class="basket" href="#">Корзина</a>
         </div>
+          <div class="basket"> <a href="#">Корзина</a></div>
       </div>
     </header>
     
@@ -41,48 +28,44 @@
       <div class="shop">
         <h1>Магазин готовых шаблонов</h1>      
       </div>
+      <div class="sort-bar">
+      <p class="sort-bar1">Стоимость:</p>
+      <p class="sort-bar1">Сортировать:</p>
+      <p class="sort-bar2">По цене</p>
+      <p class="sort-bar2">По типу</p>
+      <p class="sort-bar2">По названию</p>
+      </div>
       <div class="flex-shop">
-      <section class="sidebar">   
+      <section class="sidebar"> 
         <div class="form">
-         range
           <form action="#" method="get">
-            <div> Сетка:</div>
-            <label> <input type="radio" name="grid" value="adaptive" checked>Адаптивная</label>
-            <label> <input type="radio" name="grid" value="rubber">Резиновая</label>
-            <label> <input type="radio" name="grid" value="fix">Фиксированная</label>  
-            <div>Особенности:</div>
-            <label> Слайдер <input type="checkbox" name="slider" checked> </label>
-            <label> Блок преимуществ <input type="checkbox" name="advantages"> </label>
-            <label> Новости <input type="checkbox" name="news" checked> </label>
-            <label> Галерея <input type="checkbox" name="gallery"> </label>
-            <label> Корзина <input type="checkbox" name="basket"> </label>
-            <button>Показать</button>
+            <p class="sort-bar3"> Сетка:</p>
+            <input type="radio" name="grid" value="adaptive" checked id="r1">
+            <label for="r1">Адаптивная</label>
+            <input type="radio" name="grid" value="rubber" id="r2">
+            <label for="r2">Фиксированная</label>
+            <input type="radio" name="grid" value="fix" id="r3">
+            <label for="r3">Резиновая</label>
+            <p class="sort-bar4">Особенности:</p>
+            <input type="checkbox" name="slider" checked id="ch1">
+            <label for="ch1">Слайдер</label>
+            <input type="checkbox" name="advantages" id="ch2">
+            <label for="ch2">Блок преимуществ</label>
+            <input type="checkbox" name="news" checked id="ch3">
+            <label for="ch3">Новости</label>
+            <input type="checkbox" name="gallery" id="ch4">
+            <label for="ch4">Галерея</label>
+            <input type="checkbox" name="basket" id="ch5">
+            <label for="ch5">Корзина</label>
+            <input type="submit" class="button" value="Показать">
           </form>    
         </div>
       </section>
 
       <section class="items">
-        <p>Сортировать:</p>   
-        <ul class="sort">
-          <li>
-            <a class="sort" href="#"> по цене </a>
-          </li>
-          <li>
-            <a class="sort" href="#"> по типу </a>
-          </li>
-          <li>
-            <a class="sort" href="#"> по названию </a>
-          </li>
-          <li>
-            <a class="sort" href="#"> меньше </a>
-          </li>
-          <li>
-            <a class="sort" href="#"> больше </a>
-          </li>
-        </ul>
         <div class="items">
           <a href="#">
-            <img src="img/img-sedona.jpg" width="360" height="616" alt="Sedona">     
+            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">     
           </a> 
 <!--
           <div class="hover">
@@ -94,7 +77,7 @@
 -->
         
           <a href="#">
-            <img src="img/img-pink.jpg" width="360" height="616" alt="Pink">     
+            <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">     
           </a>
 <!--
           <div class="hover">
@@ -106,7 +89,7 @@
 -->
        
           <a href="#">
-            <img src="img/img-barbershop.jpg" width="360" height="616" alt="Barbershop">     
+            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">     
           </a>    
 <!--
           <div class="hover">
@@ -118,7 +101,7 @@
 -->
        
           <a href="#">
-            <img src="img/img-mishka.jpg" width="360" height="616" alt="Mishka">     
+            <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">     
           </a>   
 <!--
           <div class="hover">
@@ -130,7 +113,7 @@
 -->
         
           <a href="#">
-            <img src="img/img-aplus.jpg" width="360" height="616" alt="Aplus">     
+            <img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus">     
           </a>
 <!--
           <div class="hover">
@@ -142,7 +125,7 @@
 -->
         
           <a href="#">
-            <img src="img/img-kvast.jpg" width="360" height="616" alt="Kvast">     
+            <img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast">     
           </a>    
 <!--
           <div class="hover">
@@ -155,45 +138,37 @@
         </div>  
       </section>
       </div>
- 
-      <ul class="switch-pages">
-        <li>
-          <a class="page-btn" href="#"> 1 </a>
-        </li>
-        <li>
-          <a class="page-btn" href="#"> 2 </a>
-        </li>
-        <li>
-          <a class="page-btn" href="#"> 3 </a>
-        </li>
-        <li>
-          <a class="page-btn" href="#"> следующая </a>
-        </li>
-      </ul> 
+      <div class="paginator">
+        <a class="normal current" href="#1">1</a>
+        <a class="normal" href="#">2</a>
+        <a class="normal" href="#">3</a>
+        <a class="next" href="#">Следующая</a>
+      </div>
     </main>
     
-    <div class="map">
-      <img src="#" width="1440" height="416" alt="карта">    
+     <div class="map">
+      <img src="img/map.jpg" width="1440" height="416" alt="карта">    
+<!--
       <div class="adress">
         <b>nerd's design studio</b>
-        <p>191186, Санкт-Петербург
-        ул Б. Конюшенная, 9/18</p>
-        <p>
+        <p>191186, Санкт-Петербург <br>
+        ул Б. Конюшенная, 9/18 <br>
         тел. +7(812)275-75-75
         </p>     
       </div>
+-->
     </div>
     
     <footer class="main-footer">
       <div class="container">
         <section class="footer-social">
          <div class="footer-btn">
-          <a class="social-btn" href="#">вк</a>
-          <a class="social-btn" href="#">фб</a>
-          <a class="social-btn" href="#">им</a>
+          <a class="social-btn vk" href="#"></a>
+          <a class="social-btn fb" href="#"></a>
+          <a class="social-btn im" href="#"></a>
          </div>
          <div class="footer-offer">
-          <h2 class="friends">Давайте дружить, это выгодно!</h2>
+          <p class="friends">Давайте дружить, это выгодно!</p>
           <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
          </div>
         </section>
