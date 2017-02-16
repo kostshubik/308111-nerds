@@ -22,12 +22,17 @@
         </div>
           <div class="basket"> <a href="#">Корзина</a></div>
       </div>
+            <div class="shop">
+        <h1>Магазин готовых шаблонов</h1>      
+      </div>
     </header>
     
     <main class="container">
+<!--
       <div class="shop">
         <h1>Магазин готовых шаблонов</h1>      
       </div>
+-->
       <div class="sort-bar">
       <p class="sort-bar1">Стоимость:</p>
       <p class="sort-bar1">Сортировать:</p>
@@ -38,7 +43,20 @@
       <div class="flex-shop">
       <section class="sidebar"> 
         <div class="form">
-          <form action="#" method="get">
+        <form action="#" method="get">
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
             <p class="sort-bar3"> Сетка:</p>
             <input type="radio" name="grid" value="adaptive" checked id="r1">
             <label for="r1">Адаптивная</label>
@@ -58,7 +76,7 @@
             <input type="checkbox" name="basket" id="ch5">
             <label for="ch5">Корзина</label>
             <input type="submit" class="button" value="Показать">
-          </form>    
+        </form>    
         </div>
       </section>
 
