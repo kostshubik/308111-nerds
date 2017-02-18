@@ -170,10 +170,11 @@ header {
 .slide .btn{
     display:block;
     width:240px;
-    padding:13px 0;
+    padding:9px 0;
     margin-top:40px;
     font-size:16px;
-    font-weight: 32px;
+    line-height: 32px;
+    font-weight: normal;
     color:white;
     text-transform:uppercase;
     text-align:center;
@@ -293,10 +294,9 @@ header {
   position: absolute;
   top: 427px;
   left: 0px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #eeeeee;
   width: 1160px;
   height: 2px;
-  background-position: -5px -115px;
  }
 
 .about-us-flex {
@@ -353,10 +353,9 @@ header {
   position: absolute;
   top: 12px;
   left: -35px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #fb565a;
   width: 25px;
   height: 2px;
-  background-position: -5px -5px;
  }
 
 .pseudo {
@@ -368,10 +367,9 @@ header {
   position: absolute;
   top: 12px;
   left: -35px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #fb565a;
   width: 25px;
   height: 2px;
-  background-position: -5px -5px;
  }
 
 .pseudo::after {
@@ -379,10 +377,9 @@ header {
   position: absolute;
   top: 60px;
   left: -35px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #fb565a;
   width: 25px;
   height: 2px;
-  background-position: -5px -5px;
  }
 
 .items-list li{
@@ -409,7 +406,7 @@ header {
 .accuracy {
    display: inline-block;
     width: 100px;
-    margin-top: 5px;
+    margin-top: 13px;
     margin-right: 15px; 
 }
 
@@ -457,10 +454,9 @@ header {
   position: absolute;
   top: -64px;
   left: -30px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #eeeeee;
   width: 1160px;
   height: 2px;
-  background-position: -5px -115px;
  }
 
 .academy-logo {
@@ -473,10 +469,9 @@ header {
   position: absolute;
   top: 4px;
   left: 249px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #eeeeee;
   width: 2px;
   height: 52px;
-  background-position: -106px -30px;
  }
 
 .borodinsky-logo {
@@ -489,10 +484,9 @@ header {
   position: absolute;
   top: 10px;
   left: 253px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #eeeeee;
   width: 2px;
   height: 52px;
-  background-position: -106px -30px;
  }
 
 .pink-logo {
@@ -505,10 +499,9 @@ header {
   position: absolute;
   top: -6px;
   left: 241px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #eeeeee;
   width: 2px;
   height: 52px;
-  background-position: -106px -30px;
  }
 
 .mishka-logo {
@@ -520,10 +513,9 @@ header {
   position: absolute;
   top: 127px;
   left: -945px;
-  background: url("../img/sprite.png") no-repeat;
+  background: #eeeeee;
   width: 1160px;
   height: 2px;
-  background-position: -5px -115px;
  }
 
 .map::before {
@@ -599,6 +591,7 @@ header {
         flex-basis: 960px; 
     -ms-flex-wrap: wrap; 
         flex-wrap: wrap;
+    margin-top:7px;
 }
 
 .footer-btn {
@@ -613,12 +606,6 @@ header {
     margin-top: 63px;
 }
 
-.social-btn {
-    position: relative;
-    width: 80px;
-    background-image: url("../img/Shape%202%20copy%203.png");  
-}
-
 .vk::before {
   content: "";
   position: absolute;
@@ -631,7 +618,10 @@ header {
  }
 
 .vk {
-    position: relative; 
+    position: relative;
+    width: 80px;
+    background:#e1e1e1;
+    border-radius:45px; 
 }
 
 .fb::before {
@@ -646,7 +636,10 @@ header {
  }
 
 .fb {
-    position: relative; 
+    position: relative;
+    width: 80px;
+    background:#e1e1e1;
+    border-radius:45px; 
 }
 
 .im::before {
@@ -661,7 +654,10 @@ header {
  }
 
 .im {
-    position: relative; 
+    position: relative;
+    width: 80px;
+    background:#e1e1e1;
+    border-radius:45px;
 }
 
 .footer-offer {
@@ -945,12 +941,15 @@ input[type="radio"]:checked + label::after {
 
 .button {
     font-size: 16px;
+    line-height: 18px;
+    font-weight: normal;
     text-transform: uppercase;
-    background-image: url("../img/sprite.png") no-repeat;  
+    background:#eeeeee;  
+    border-radius:3px;
     width: 260px;
     height: 50px;
-    background-position: -5px -127px; 
     margin-top: 30px;
+    border: none;
 }
 
 .items {
@@ -1028,8 +1027,6 @@ input[type="radio"]:checked + label::after {
 .items:hover .hover  {
   display:block;
 }
-
-
 
 .paginator {
     width: 445px;
