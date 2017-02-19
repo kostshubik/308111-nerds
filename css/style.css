@@ -1022,7 +1022,7 @@ input[type="radio"]:checked + label::after {
     border-radius:3px;
 }
 
-.items:hover .hover  {
+.items a:hover .hover  {
   display:block;
 }
 
