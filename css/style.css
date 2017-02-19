@@ -1128,7 +1128,7 @@ input[type="radio"]:checked + label::after {
     margin-bottom: 10px;
 }
 
-.login-form input[type="name"],
+.login-form input[type="text"],
 .login-form input[type="email"] {
     width: 360px;
     margin: 0;
@@ -1154,6 +1154,20 @@ input[type="radio"]:checked + label::after {
     background-color: #ffffff;
     border: 2px solid #eeeeee;
 }
+
+.login-form textarea[name="text"] {
+    width: 760px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    margin-right: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #eeeeee;
+}
+
 
 .login-form input.icon-user {
     background: #ffffff;
