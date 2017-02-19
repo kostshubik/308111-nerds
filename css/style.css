@@ -1067,3 +1067,130 @@ input[type="radio"]:checked + label::after {
     height: 50px;
     background-position: -5px -127px;
 }
+
+.modal-content {
+    display: none;
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    width: 960px;
+    margin-left: -500px;
+    padding: 30px 100px;
+    color: #000000;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  width: 19px;
+  height: 3px;
+  background-color: red;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content-title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.modal-content p {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.modal-content .login-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="name"],
+.login-form input[type="email"] {
+    width: 360px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    margin-right: 0px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #eeeeee;
+}
+
+.login-form textarea[type="text"] {
+    width: 760px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    margin-right: 40px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #eeeeee;
+}
+
+.login-form input.icon-user {
+    background: #ffffff;
+    border-radius:3px;
+}
+
+.login-form input.icon-email {
+    background: #ffffff;
+    border-radius:3px;
+}
+
+.login-form textarea.icon-text {
+    background: #ffffff;
+    border-radius:3px;
+}
+
+.modal-btn{
+    display:block;
+    width:260px;
+    padding:16px 0;
+    margin-top:35px;
+    margin-left: 0px;
+    font-size:16px;
+    line-height: 18px;
+    font-weight: normal;
+    color:white;
+    text-transform:uppercase;
+    text-align:center;
+    text-decoration:none;
+    background:#fb565a;
+    border-radius:3px;
+    border: none;
+}
+
+
+
+
