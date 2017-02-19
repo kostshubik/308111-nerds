@@ -27,7 +27,6 @@ h2 {
  
 header {
     background: #eeeeee url("../img/grey-back.png") no-repeat center top;
-    max-width: 1440px;
     margin:auto;
     padding-top: 8px;
 }
@@ -534,7 +533,6 @@ header {
     margin: 0 auto;
     background-image: url("../img/map.jpg");
     height: 416px;
-    width: 1440px;
 }
 
 .adress {
