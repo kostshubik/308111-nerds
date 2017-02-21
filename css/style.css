@@ -1004,12 +1004,12 @@ input[type="radio"]:checked + label::after {
     margin-top: 70px;
 }
 
-.items a {
+.items-conteiner {
     margin-bottom: 71px;
     position: relative;
 }
 
-.items>a::before {
+.items-conteiner::before {
     content: "";
     position: absolute;
     top: -40px;
@@ -1090,7 +1090,7 @@ input[type="radio"]:checked + label::after {
     border-radius: 3px;
 }
 
-.items a:hover .hover {
+.items-conteiner:hover .hover {
     display: block;
 }
 
