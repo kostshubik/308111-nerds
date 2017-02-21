@@ -74,6 +74,20 @@ header {
     color: #fb565a;
 }
 
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 18%;
+    background: #fb565a;
+    width: 64%;
+    height: 2px;
+}
+
 .basket a {
     position: relative;
     display: inline-block;
