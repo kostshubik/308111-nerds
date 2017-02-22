@@ -460,8 +460,8 @@ header {
     flex-basis: 1160px;
     padding-left: 30px;
     padding-right: 00px;
-    padding-top: 105px;
-    padding-bottom: 116px;
+    padding-top: 101px;
+    padding-bottom: 120px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -539,22 +539,14 @@ header {
     height: 2px;
  }
 
-.map::before {
-    content: "";
-    position: absolute;
-    top: 89px;
-    left: 820px;
-    background: url("../img/sprite.png") no-repeat;
-    width: 231px;
-    height: 190px;
-    background-position: -811px -255px;
- }
-
 .map {
+    min-width: 1160px;
     max-width: 1440px;
     position: relative;
-    margin: 0 auto;
+    margin-left: auto;
+	margin-right: auto;
     background-image: url("../img/map.jpg");
+    background-position: center;
     height: 416px;
 }
 
@@ -564,7 +556,8 @@ header {
     height: 308px;
     background: url("../img/whitebackmap.png") no-repeat;
     top: 54px;
-    left: 140px;
+    left: 50%;
+    transform: translateX(-580px);
 }
 
 .adress b {
@@ -1141,10 +1134,12 @@ input[type="radio"]:checked + label::after {
 .modal-content {
     display: none;
     position: absolute;
-    top: -137px;
-    left: 740px;
+    bottom: -36px;
     width: 762px;
-    margin-left: -500px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: - 200px;
     padding: 25px 99px;
     padding-left: 99px;
     color: #000000;
