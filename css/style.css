@@ -240,12 +240,8 @@ header {
     display: block;
 }
 
-.items-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 1100px;
-    flex-basis: 1100px;
+.items-float {
+    width: 1100px;
     margin-bottom: 80px;
     margin-top: 80px;
     position: relative;
@@ -255,17 +251,20 @@ header {
     width: 300px;
     margin-right: 100px;
     position: relative;
+    float: left;
 }
 
 .app {
     width: 300px;
     margin-right: 100px;
     position: relative;
+    float: left;
 }
 
 .presentations {
     width: 300px;
     position: relative;
+    float: right;
 }
 
 .items-title {
@@ -318,7 +317,7 @@ header {
     border-radius: 3px;
 }
 
-.items-flex::after {
+.items-float::after {
     content: "";
     position: absolute;
     top: 427px;
@@ -328,19 +327,15 @@ header {
     height: 2px;
  }
 
-.about-us-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 110px;
+.about-us-float {
+/*    margin-top: -100px;*/
 }
 
 .we-are {
     width: 660px;
     margin-right: auto;
+    margin-top: 110px;
+    float: left;
 }
 
 .we-are-text {
@@ -416,7 +411,8 @@ header {
 .logo {
     width: 360px;
     margin-left: auto;
-    margin-top: 12px;
+    margin-top: 122px;
+    float: right;
 }
 
 .year {
@@ -453,86 +449,85 @@ header {
 }
 
 .examples-logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 1160px;
-    flex-basis: 1160px;
+    width: 1160px;
     padding-left: 30px;
     padding-right: 00px;
     padding-top: 101px;
     padding-bottom: 120px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+}
+
+.academy-logo {
+    float:  left;
+    position: relative;
+    padding-left: 1px;
+    padding-right: 96px; 
+    padding-top: 13px;
+}
+
+.borodinsky-logo {
+    float:  left;
+    position: relative;
+    padding-right: 103px;
+}
+
+.pink-logo {
+    float:  left;
+    position: relative;
+    padding-right: 121px;
+    padding-top: 16px;
+}
+
+.mishka-logo {
+    float:  right;
+    position: relative;
+    padding-right:73px;
+    padding-top: 3px;
 }
 
 .academy-logo::before {
     content: "";
     position: absolute;
-    top: -64px;
+    top: -52px;
     left: -30px;
     background: #eeeeee;
     width: 1160px;
     height: 2px;
  }
 
-.academy-logo {
-    position: relative;
-    padding-right: 97px;
-}
-
 .academy-logo::after {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 15px;
     left: 249px;
     background: #eeeeee;
     width: 2px;
     height: 52px;
  }
 
-.borodinsky-logo {
-    position: relative;
-    padding-right: 103px;
-}
-
 .borodinsky-logo::after {
     content: "";
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: 253px;
     background: #eeeeee;
     width: 2px;
     height: 52px;
  }
 
-.pink-logo {
-    position: relative;
-    padding-right: 121px;
-}
-
 .pink-logo::after {
     content: "";
     position: absolute;
-    top: -6px;
+    top: 15px;
     left: 241px;
     background: #eeeeee;
     width: 2px;
     height: 52px;
  }
 
-.mishka-logo {
-    position: relative;
-}
-
 .mishka-logo::after {
     content: "";
     position: absolute;
-    top: 127px;
+    top: 131px;
     left: -945px;
     background: #eeeeee;
     width: 1160px;
@@ -598,26 +593,61 @@ header {
 }
 
 .footer-social {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 960px;
-    flex-basis: 960px; 
-    -ms-flex-wrap: wrap; 
-    flex-wrap: wrap;
+    width: 960px; 
     margin-top: 7px;
 }
 
 .footer-btn {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display: flex;
+    display: inline-block;
     width: 260px;
     max-height: 79px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: 63px;
+    margin-top: 83px;
+    float: left;
+    font-size: 0px;
+    white-space: nowrap;
+}
+
+.footer-offer {
+    width: 560;
+    margin-left: 139px;
+    align-content: center; 
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-right: 14px;
+    float: right;
+}
+
+.vk {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: -20px;
+    margin-right: 10px;
+    background: #e1e1e1;
+    border-radius: 45px;
+}
+
+.fb {
+    display: inline-block;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    top: -20px;
+    margin-right: 10px;
+    background: #e1e1e1;
+    border-radius:45px; 
+}
+
+.im {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    left: 0px;
+    top: -20px;
+    background: #e1e1e1;
+    border-radius: 45px;
 }
 
 .vk::before {
@@ -631,13 +661,6 @@ header {
     background-position: -5px -195px;
  }
 
-.vk {
-    position: relative;
-    width: 80px;
-    background: #e1e1e1;
-    border-radius: 45px; 
-}
-
 .fb::before {
     content: "";
     position: absolute;
@@ -649,13 +672,6 @@ header {
     background-position: -1141px -30px;
  }
 
-.fb {
-    position: relative;
-    width: 80px;
-    background: #e1e1e1;
-    border-radius:45px; 
-}
-
 .im::before {
     content: "";
     position: absolute;
@@ -666,24 +682,6 @@ header {
     height: 21px;
     background-position: -75px -62px;
  }
-
-.im {
-    position: relative;
-    width: 80px;
-    background: #e1e1e1;
-    border-radius: 45px;
-}
-
-.footer-offer {
-    width: 560;
-    margin-left: 139px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-line-pack: center;
-    align-content: center; 
-    margin-top: 30px;
-    margin-bottom: 70px;
-}
 
 .friends {
     color: #000000;
@@ -713,7 +711,7 @@ header {
 .sort-bar::before {
     content: "";
     position: absolute;
-    top: 97px;
+    top: 30px;
     left: 1122px;  
     background: url("../img/sprite.png") no-repeat;
     width: 9px;
@@ -722,24 +720,15 @@ header {
  }
 
 .sort-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     position: relative;
-    -ms-flex-preferred-size: 1160px;
-    flex-basis: 1160px;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;  
+    width: 1160px;
+    margin-top: 67px;
 }
 
 .sort-bar::after {
     content: "";
     position: absolute;
-    top: 97px;
+    top: 30px;
     left: 1151px;  
     background: url("../img/sprite.png") no-repeat;
     width: 9px;
@@ -748,61 +737,57 @@ header {
  }
 
 .sort-bar1 {
+    display: inline-block;
     color: #000000;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    margin-top: 87px;
-    margin-right: 280px;
     letter-spacing: 0.7px;
+    margin-right: 276px;
 }
 
 .sort-bar11 {
+    display: inline-block;
     color: #000000;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    margin-top: 80px;
-    margin-right: 288px;
+    margin-right: 284px;
 }
 
 .sort-bar2 {
+    display: inline-block;
     color: #000000;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
     margin-left: -20px;
-    margin-right: 45px;
-    margin-top: 80px;
+    margin-right: 21px;
+ 
 }
 
 .sort-bar22 {
+    display: inline-block;
     color: #eeeeee;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
-    margin-left: -20px;
-    margin-right: 45px;
-    margin-top: 80px;
+    margin-right: 22px;
+
+
 }
 
-.flex-shop {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 1160px;
-    flex-basis: 1160px;
+.float-shop {
+    width: 1160px;
+    margin-top: 3px;
 }
 
 .sidebar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 260px;
-    flex-basis: 260px;
+    width: 260px;
     padding-right: 140px;
+    float: left;
 }
 
 .range-controls {
@@ -811,6 +796,7 @@ header {
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
+    margin-top: -1px;
     margin-bottom: 15px;
     border-radius: 5px;
     background: #f1f1f1;
@@ -865,8 +851,9 @@ header {
 
 .price-controls input {
     font-size: 16px;
+    line-height: 18px;
     width: 60px;
-    margin-left: 10px;
+    margin-left: 8px;
     padding: 10px 10px;
     text-align: center;
     color: #283136;
@@ -982,24 +969,27 @@ input[type="radio"]:checked + label::after {
     border: none;
 }
 
+.shop-items {
+    width: 760px;
+    float: right;
+}
 .items {
-    position: relative;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -ms-flex-preferred-size: 760px;
-    flex-basis: 760px; 
-    -ms-flex-wrap: wrap; 
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    width: 760px;
     margin-top: 70px;
 }
 
 .items-conteiner {
     margin-bottom: 71px;
     position: relative;
+    float: left;
+}
+
+.items-conteiner:nth-child(2n+1) {
+    margin-right: 40px;
+}
+
+.items-conteiner:nth-child(n+5) {
+    margin-top: 1px;
 }
 
 .items-conteiner::before {
@@ -1093,7 +1083,7 @@ input[type="radio"]:checked + label::after {
 
 .paginator {
     width: 445px;
-    margin-top: -25px;
+    margin-top: -27px;
     margin-left: 390px;
     margin-bottom: 50px;
     padding: 10px;
