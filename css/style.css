@@ -540,7 +540,7 @@ header {
     position: relative;
     margin-left: auto;
 	margin-right: auto;
-    background-image: url("../img/map.jpg");
+    background-image: #e9e5dc url("../img/map.jpg");
     background-position: center;
     height: 416px;
 }
